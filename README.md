@@ -10,6 +10,15 @@ It has no error handling, so will throw an exception if no command-line argument
 
 - Java 8 or later
 - CodeQL CLI
+- VSCode
+- GitHub CLI
+- GNU Make (though you can just use the commands in the `Makefile`, they are not complicated)
+
+## Set up the CodeQL CLI and VSCode Starter workspace
+
+You can [follow these instructions on how to get set up with CodeQL](https://github.com/codeql-workshops/codeql-learning-catalog/tree/master/docs/QLC/100).
+
+It relies on the [GitHub CLI](https://cli.github.com/), and VSCode so grab them first if you haven't already.
 
 ## Build the app
 
@@ -20,7 +29,7 @@ make Main
 ## Run the app
 
 ```bash
-java Main "foo"
+make run
 ```
 
 ## Build the CodeQL database
