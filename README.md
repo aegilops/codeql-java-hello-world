@@ -6,7 +6,13 @@ It prints "Hello, World!" to the console, and "Hello, foo!" if the first command
 
 It has no error handling, so will throw an exception if no command-line arguments are provided.
 
-## Prerequisites
+## Using with GitHub Advanced Security
+
+Fork the repository to a public repository, allow running the CodeQL workflow, and see the CodeQL results.
+
+## Using locally
+
+### Requirements
 
 - Java 8 or later
 - CodeQL CLI
@@ -14,37 +20,33 @@ It has no error handling, so will throw an exception if no command-line argument
 - GitHub CLI
 - GNU Make (though you can just use the commands in the `Makefile`, they are not complicated)
 
-## Set up the CodeQL CLI and VSCode Starter workspace
+### Set up the CodeQL CLI and VSCode Starter workspace
 
 You can [follow these instructions on how to get set up with CodeQL](https://github.com/codeql-workshops/codeql-learning-catalog/tree/master/docs/QLC/100).
 
 It relies on the [GitHub CLI](https://cli.github.com/), and VSCode so grab them first if you haven't already.
 
-## Build the app
+### Build the app
 
 ```bash
 make Main
 ```
 
-## Run the app
+### Run the app (optional)
 
 ```bash
 make run
 ```
 
-## Build the CodeQL database
+### Build the CodeQL database
 
 ```bash
 make clean && make
 ```
 
-## Run the CodeQL queries
+### Run the CodeQL queries
 
 Use the VSCode Starter workspace to load the CodeQL database and run the queries.
-
-or
-
-Fork the repository to a public repository, allow running the CodeQL workflow, and see the CodeQL results.
 
 ## License
 
