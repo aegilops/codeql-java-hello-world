@@ -42,6 +42,10 @@ make clean && make
 
 Use the VSCode Starter workspace to load the CodeQL database and run the queries.
 
+or
+
+Fork the repository to a public repository, allow running the CodeQL workflow, and see the CodeQL results.
+
 ## License
 
 This is a copyrighted work, and is not released under an open source license.
